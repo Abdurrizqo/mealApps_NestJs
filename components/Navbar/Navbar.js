@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { SearchOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import { useRouter } from "next/router";
@@ -28,3 +29,20 @@ export default function Navbar() {
     </>
   );
 }
+=======
+import React from "react";
+
+function Navbar() {
+  return (
+    <div className="w-full h-16 bg-white shadow-md">
+      <div className="mx-10 flex justify-between items-center h-full">
+        <h1 className="text-3xl font-semibold font-display text-mainColor">
+          Recipe
+        </h1>
+      </div>
+    </div>
+  );
+}
+
+export default Navbar;
+>>>>>>> 9eb9c4971535842eca2cc4534d9a0a1f91819865
