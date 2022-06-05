@@ -1,11 +1,21 @@
 import { useRouter } from "next/router";
 import axios from "axios";
+import {ClearOutlined} from '@ant-design/icons';
 import Card from "../../components/Card/Card";
 
 
 export default function Countries({resFetchcountrie}){
     const router = useRouter();
     const {countries} = router.query;
+    if(!resFetchcountrie){
+        return(
+            <div className="my-40 text-center">
+                <ClearOutlined style={{fontSize:"80px", color: "#f1f1f1"}}/>
+                <h1 className="mt-4 text-xl font-bold">Nothing Found</h1>
+                <p className="text-lg">Sorry, but recipe you search is nothing. Please try again with other recipes.</p>
+            </div>
+        )
+    }
     return(
         <div>
             <h1 className="text-xl font-semibold">Filter By {countries}</h1>

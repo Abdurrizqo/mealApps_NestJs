@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useRouter } from "next/router";
-import {FlagOutlined, StarFilled, TagOutlined, TagTwoTone } from "@ant-design/icons";
+import {FlagOutlined, StarFilled, TagOutlined, ClearOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import IngredientTag from '../components/DetailTag/IngredientTag'
 import InstructionsTag from "../components/InstructionsTag/InstructionsTag";
@@ -15,7 +15,15 @@ export default function DetailMeal({resFetchMeal}){
         setActiveStatus(e.target.id);
     }
 
-
+    if(!resFetchMeal){
+        return(
+            <div className="my-40 text-center">
+                <ClearOutlined style={{fontSize:"80px", color: "#f1f1f1"}}/>
+                <h1 className="mt-4 text-xl font-bold">Nothing Found</h1>
+                <p className="text-lg">Sorry, but recipe you search is nothing. Please try again with other recipes.</p>
+            </div>
+        )
+    }
 
     return(
         <div className="w-11/12 md:w-3/4 mx-auto rounded bg-white shadow-md py-10">

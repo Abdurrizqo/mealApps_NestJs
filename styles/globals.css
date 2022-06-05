@@ -10,18 +10,13 @@ body {
 }
 
 a {
-<<<<<<< HEAD
   color: unset !important;
-=======
-  color: inherit;
->>>>>>> 9eb9c4971535842eca2cc4534d9a0a1f91819865
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
 }
-<<<<<<< HEAD
 
 pre {
   white-space: pre-wrap;
@@ -46,5 +41,3 @@ pre {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(159, 159, 159); 
 }
-=======
->>>>>>> 9eb9c4971535842eca2cc4534d9a0a1f91819865

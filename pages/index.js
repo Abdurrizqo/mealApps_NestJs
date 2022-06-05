@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import axios from "axios";
 import Link from "next/link";
 import Card from "../components/Card/Card";
@@ -36,19 +35,3 @@ export async function getStaticProps() {
     }
   }
 }
-=======
-import Head from "next/head";
-import Image from "next/image";
-import Card from "../components/Card/Card";
-import Navbar from "../components/Navbar/Navbar";
-import styles from "../styles/Home.module.css";
-
-export default function Home() {
-  return (
-    <>
-      <Navbar />
-      <Card />
-    </>
-  );
-}
->>>>>>> 9eb9c4971535842eca2cc4534d9a0a1f91819865
