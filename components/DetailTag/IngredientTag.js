@@ -20,7 +20,8 @@ export default function IngredientTag({detail}){
             }
         }
     }
-    for(let i = 0; i<20; i++){
+    
+    for(let i = 0; i<ingredient.length; i++){
         strIngredient.push(measure[i]+" "+ingredient[i])
     }
 

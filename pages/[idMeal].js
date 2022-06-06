@@ -54,7 +54,7 @@ export default function DetailMeal({resFetchMeal}){
                 <div className="mt-6 w-full">                    
                     <div className="flex w-full px-6 justify-center text-base">
                         <h3 className={`cursor-pointer ${activeStatus==='detail' ? "text-[#EC994B]" : ""}`} onClick={isActive} id="detail">Ingredient</h3>
-                        <h3 className={`px-16 cursor-pointer ${activeStatus==='instructions' ? "text-[#EC994B]" : ""}`} onClick={isActive} id="instructions">Instructions</h3>
+                        <h3 className={`px-8 sm:px-16 cursor-pointer ${activeStatus==='instructions' ? "text-[#EC994B]" : ""}`} onClick={isActive} id="instructions">Instructions</h3>
                         <h3 className={`cursor-pointer ${activeStatus==='video' ? "text-[#EC994B]" : ""}`} onClick={isActive} id="video">Video</h3>
                     </div>
                     <div className="border-t-2 border-[#EC994B] mx-4">
