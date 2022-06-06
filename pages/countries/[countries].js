@@ -22,7 +22,7 @@ export default function Countries({resFetchcountrie}){
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                 {resFetchcountrie.map((index) => {
           return(
-            <Card indexMeal={index}/>
+            <Card key={index.idMeal} indexMeal={index}/>
           )
         })}
             </div>
