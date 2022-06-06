@@ -3,7 +3,7 @@ import LazyLoad from 'react-lazyload';
 
 export default function Card({indexMeal}) {
   return (
-    <div className="bg-white rounded-md shadow">
+    <div className="bg-white rounded-md shadow hover:shadow-lg">
       <div className="">
       <LazyLoad>
           <img
